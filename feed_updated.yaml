@@ -1,5 +1,7 @@
 author: Bohdan Hrabynskyi
-category: General
+category:
+  main: Technology
+  subcategory: Software
 description: Conversations with AI personalities.
 email: bogdan.grabinskij@gmail.com
 format: audio/mpeg
@@ -8,31 +10,38 @@ item:
 - description: Placeholder description for episode one.
   duration: 00:00:07
   file: /audio/01.mp3
-  guid: 6d726491-299d-4fd0-bb26-4f57a0d3ea0f
-  length: 112,849
+  guid: deec1c4d-c918-4b7b-b8f7-a4bc43d367df
+  length: 112849
   published: Sun, 08 Sep 2024 11:00:00 GMT
   title: EP01-Theme 01
 - description: Placeholder description for episode two.
   duration: 00:00:07
   file: /audio/02.mp3
-  guid: bed952ff-5d29-478e-9ed9-4bbbe6277859
-  length: 112,849
+  guid: bcf5b1f8-080a-4894-89ea-eeb06b3b3ee7
+  length: 112849
   published: Sun, 08 Sep 2024 11:30:00 GMT
   title: EP02-Theme 02
 - description: Placeholder description for episode three.
   duration: 00:00:07
   file: /audio/03.mp3
-  guid: 6bf70d06-6dc1-4768-8aa2-e370bb1af3c7
-  length: 112,849
+  guid: 0c4956cc-e78d-4880-9a25-55e18dfa7cff
+  length: 112849
   published: Sun, 08 Sep 2024 13:30:00 GMT
   title: EP03-Theme 03
 - description: Placeholder description for episode four.
   duration: 00:00:07
   file: /audio/04.mp3
-  guid: 15edd886-afbb-47b0-8a04-a9f7ba50cd61
-  length: 112,849
+  guid: 393bd4f5-4a7c-44e1-ace3-46bf3e99866d
+  length: 112849
   published: Sun, 08 Sep 2024 13:45:00 GMT
   title: EP04-Theme 04
+- description: Placeholder description for episode five.
+  duration: 00:00:07
+  file: /audio/05.mp3
+  guid: 8c19925c-0a3c-45af-9c6d-de1f62519e98
+  length: 112849
+  published: Sun, 08 Sep 2024 16:30:00 GMT
+  title: EP05-Theme 05
 language: en-us
 link: https://grabinskij.github.io/podcast-feed
 subtitle: Presented by Bohdan Hrabynskyi
