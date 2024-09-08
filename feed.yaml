@@ -1,7 +1,7 @@
 title: Test Feed Podcast
-subtitle: Presented by Some Media
-author: Author Name
-description: Conversations with various people.
+subtitle: Presented by Bohdan Hrabynskyi
+author: Bohdan Hrabynskyi
+description: Conversations with AI personalities.
 image: /images/image.jpg
 language: en-us
 category: General
@@ -10,15 +10,15 @@ link: https://grabinskij.github.io/podcast-feed
 item:
   - title: EP01-Theme 01
     description: Placeholder description for episode one.
-    published: Thu, 03 Jan 2024 00:00:00 GMT
+    published: Sun, 08 Sep 2024 11:00:00 GMT
     file: /audio/01.mp3
-    duration: 00:00:05
-    length: 123,456  
+    duration: 00:00:07
+    length: 112,849   
   - title: EP02-Theme 02
     description: Placeholder description for episode two.
-    published: Thu, 02 Jan 2024 00:00:00 GMT
+    published: Sun, 08 Sep 2024 11:30:00 GMT
     file: /audio/02.mp3
-    duration: 00:00:05
-    length: 234,567   
+    duration: 00:00:07
+    length: 112,849   
 
   
