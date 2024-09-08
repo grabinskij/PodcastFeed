@@ -2,16 +2,22 @@ import yaml
 import uuid
 import xml.etree.ElementTree as xml_tree
 
+
 def create_element(parent, tag, text=None, attrib=None):
     """Helper function to create an XML element with optional text and attributes."""
     elem = xml_tree.SubElement(parent, tag, attrib if attrib else {})
-    if text:
-        elem.text = text
+    if text is not None:
+        if 'text' in elem.tag:
+            elem.set('text', text)
+        else:
+            elem.text = text
     return elem
+
 
 def generate_guid(title):
     """Generate a unique GUID for an episode based on its title."""
     return str(uuid.uuid4())
+
 
 def main():
     # Load YAML data
@@ -22,7 +28,6 @@ def main():
         print(f"Error loading YAML: {e}")
         exit(1)
 
-
     # Add GUIDs to episodes
     for item in yaml_data.get('item', []):
         item['guid'] = generate_guid(item.get('title', ''))
@@ -30,7 +35,6 @@ def main():
     # Save updated YAML data
     with open('feed_updated.yaml', 'w') as file:
         yaml.dump(yaml_data, file)
-
 
     # Create XML elements
     rss_element = xml_tree.Element('rss', {
@@ -47,7 +51,7 @@ def main():
     create_element(channel_element, 'format', yaml_data.get('format', ''))
     create_element(channel_element, 'subtitle', yaml_data.get('subtitle', ''))
     create_element(channel_element, 'itunes:author', yaml_data.get('author', ''))
-    create_element(channel_element, 'description', yaml_data.get('description', ''))
+    create_element(channel_element, 'description',yaml_data.get('description', ''))
     create_element(channel_element, 'itunes:image', None, {'href': link_prefix + yaml_data.get('image', '')})
     create_element(channel_element, 'language', yaml_data.get('language', ''))
     create_element(channel_element, 'link', link_prefix)
@@ -60,20 +64,19 @@ def main():
         if main_category:
             category_element = create_element(channel_element, 'itunes:category', text=main_category)
             if subcategory:
-                create_element(category_element, 'itunes:category', text=subcategory)
+                create_element(category_element,'itunes:category', text=subcategory)
         else:
             create_element(channel_element, 'itunes:category', text='')
     else:
         create_element(channel_element, 'itunes:category', text=category)
-
 
     for item in yaml_data.get('item', []):
         item_element = create_element(channel_element, 'item')
         create_element(item_element, 'guid', item.get('guid', ''))
         create_element(item_element, 'title', item.get('title', ''))
         create_element(item_element, 'itunes:author', yaml_data.get('author', ''))
-        create_element(item_element, 'description', item.get('description', ''))
-        create_element(item_element, 'itunes:duration', item.get('duration', ''))
+        create_element(item_element, 'description',item.get('description', ''))
+        create_element(item_element, 'itunes:duration',item.get('duration', ''))
         create_element(item_element, 'pubDate', item.get('published', ''))
 
         create_element(item_element, 'enclosure', None, {
@@ -85,10 +88,12 @@ def main():
     # Write XML to file
         try:
             output_tree = xml_tree.ElementTree(rss_element)
-            output_tree.write('podcast.xml', encoding='UTF-8', xml_declaration=True)
+            output_tree.write('podcast.xml', encoding='UTF-8',
+                              xml_declaration=True)
         except Exception as e:
             print(f"Error writing XML: {e}")
             exit(1)
+
 
 if __name__ == "__main__":
     main()
