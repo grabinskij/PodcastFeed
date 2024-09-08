@@ -12,6 +12,12 @@ header {
   padding: 20px;
 }
 .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 .podcast-description {
@@ -40,11 +46,14 @@ header {
   cursor: pointer;
   border: none;
   background: none;
-  color: #007bff;
-  font-size: 18px;
-  padding: 5px;
-  margin-left: 10px;
+  color: #0c6a8c;
 }
 .copy-button:hover {
-  color: #0056b3;
+  color: #59d6c8;
+}
+.copy-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
