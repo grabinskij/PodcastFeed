@@ -58,13 +58,13 @@ def main():
         main_category = category.get('main', '')
         subcategory = category.get('subcategory', '')
         if main_category:
-            category_element = create_element(channel_element, 'itunes:category', main_category)
+            category_element = create_element(channel_element, 'itunes:category', text=main_category)
             if subcategory:
-                create_element(category_element, 'itunes:category', subcategory)
+                create_element(category_element, 'itunes:category', text=subcategory)
         else:
-            create_element(channel_element, 'itunes:category', '')
+            create_element(channel_element, 'itunes:category', text='')
     else:
-        create_element(channel_element, 'itunes:category', category)
+        create_element(channel_element, 'itunes:category', text=category)
 
 
     for item in yaml_data.get('item', []):
