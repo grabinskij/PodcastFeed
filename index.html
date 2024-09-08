@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Test RSS Feed</title>
+    </head>
+    <body>
+        <header>
+            <h1>Test RSS Feed</h1>
+        </header>
+
+        <div class="content">
+            <div class="podcast-description">
+                <p>Welcome to <strong>Test RSS Feed</strong></p>
+                <p>
+                    Explore cutting-edge topics in different fields of
+                    technology.
+                </p>
+            </div>
+
+            <div>Subscribe to The Podcast on your favorite platform:</div>
+            <div>
+                <button>
+                    <a
+                        href="https://podcasts.apple.com/your-podcast-link"
+                        target="_blank"
+                        >Apple Podcasts</a
+                    >
+                </button>
+                <button>
+                    <a
+                        href="https://open.spotify.com/show/your-podcast-link"
+                        target="_blank"
+                        >Spotify</a
+                    >
+                </button>
+                <button>
+                    <a
+                        href="https://podcasts.google.com/feed/your-podcast-link"
+                        target="_blank"
+                        >Google Podcasts</a
+                    >
+                </button>
+            </div>
+
+            <div>Subscribe to the podcast via:</div>
+            <a href="https://podfollow.com/your-podcast-link" target="_blank"
+                >Universal Subscription Link</a
+            >
+
+            <p>
+                Copy and paste this RSS feed URL into your favorite podcast app:
+            </p>
+            <a
+                id="rss-link"
+                href="https://grabinskij.github.io/podcast-feed/podcast.xml"
+                target="_blank"
+                >https://grabinskij.github.io/podcast-feed/podcast.xml</a
+            >
+            <button class="copy-button" onclick="copyToClipboard()">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
