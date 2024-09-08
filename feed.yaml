@@ -7,30 +7,35 @@ language: en-us
 category: General
 format: audio/mpeg
 link: https://grabinskij.github.io/podcast-feed
+email: bogdan.grabinskij@gmail.com
 item:
   - title: EP01-Theme 01
     description: Placeholder description for episode one.
     published: Sun, 08 Sep 2024 11:00:00 GMT
     file: /audio/01.mp3
     duration: 00:00:07
-    length: 112,849   
+    length: 112,849 
+    guid:  
   - title: EP02-Theme 02
     description: Placeholder description for episode two.
     published: Sun, 08 Sep 2024 11:30:00 GMT
     file: /audio/02.mp3
     duration: 00:00:07
-    length: 112,849   
+    length: 112,849  
+    guid: 
   - title: EP03-Theme 03
     description: Placeholder description for episode three.
     published: Sun, 08 Sep 2024 13:30:00 GMT
     file: /audio/03.mp3
     duration: 00:00:07
     length: 112,849 
+    guid:
   - title: EP04-Theme 04
     description: Placeholder description for episode four.
     published: Sun, 08 Sep 2024 13:45:00 GMT
     file: /audio/04.mp3
     duration: 00:00:07
     length: 112,849 
+    guid:
 
   

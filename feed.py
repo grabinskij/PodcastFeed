@@ -1,4 +1,5 @@
 import yaml
+import uuid
 import xml.etree.ElementTree as xml_tree
 
 def create_element(parent, tag, text=None, attrib=None):
@@ -8,6 +9,10 @@ def create_element(parent, tag, text=None, attrib=None):
         elem.text = text
     return elem
 
+def generate_guid(title):
+    """Generate a unique GUID for an episode based on its title."""
+    return str(uuid.uuid4())
+
 def main():
     # Load YAML data
     try:
@@ -16,6 +21,16 @@ def main():
     except yaml.YAMLError as e:
         print(f"Error loading YAML: {e}")
         exit(1)
+
+
+    # Add GUIDs to episodes
+    for item in yaml_data.get('item', []):
+        item['guid'] = generate_guid(item.get('title', ''))
+
+    # Save updated YAML data
+    with open('feed_updated.yaml', 'w') as file:
+        yaml.dump(yaml_data, file)
+
 
     # Create XML elements
     rss_element = xml_tree.Element('rss', {
@@ -36,6 +51,7 @@ def main():
     create_element(channel_element, 'itunes:image', None, {'href': link_prefix + yaml_data.get('image', '')})
     create_element(channel_element, 'language', yaml_data.get('language', ''))
     create_element(channel_element, 'link', link_prefix)
+    create_element(channel_element, 'itunes:email', yaml_data.get('email', ''))
 
     category = yaml_data.get('category', {})
     if isinstance(category, dict):
@@ -48,6 +64,7 @@ def main():
 
     for item in yaml_data.get('item', []):
         item_element = create_element(channel_element, 'item')
+        create_element(item_element, 'guid', item.get('guid', ''))
         create_element(item_element, 'title', item.get('title', ''))
         create_element(item_element, 'itunes:author', yaml_data.get('author', ''))
         create_element(item_element, 'description', item.get('description', ''))

@@ -1,0 +1,39 @@
+author: Bohdan Hrabynskyi
+category: General
+description: Conversations with AI personalities.
+email: bogdan.grabinskij@gmail.com
+format: audio/mpeg
+image: /images/eye.jpg
+item:
+- description: Placeholder description for episode one.
+  duration: 00:00:07
+  file: /audio/01.mp3
+  guid: 6d726491-299d-4fd0-bb26-4f57a0d3ea0f
+  length: 112,849
+  published: Sun, 08 Sep 2024 11:00:00 GMT
+  title: EP01-Theme 01
+- description: Placeholder description for episode two.
+  duration: 00:00:07
+  file: /audio/02.mp3
+  guid: bed952ff-5d29-478e-9ed9-4bbbe6277859
+  length: 112,849
+  published: Sun, 08 Sep 2024 11:30:00 GMT
+  title: EP02-Theme 02
+- description: Placeholder description for episode three.
+  duration: 00:00:07
+  file: /audio/03.mp3
+  guid: 6bf70d06-6dc1-4768-8aa2-e370bb1af3c7
+  length: 112,849
+  published: Sun, 08 Sep 2024 13:30:00 GMT
+  title: EP03-Theme 03
+- description: Placeholder description for episode four.
+  duration: 00:00:07
+  file: /audio/04.mp3
+  guid: 15edd886-afbb-47b0-8a04-a9f7ba50cd61
+  length: 112,849
+  published: Sun, 08 Sep 2024 13:45:00 GMT
+  title: EP04-Theme 04
+language: en-us
+link: https://grabinskij.github.io/podcast-feed
+subtitle: Presented by Bohdan Hrabynskyi
+title: Test Feed Podcast
