@@ -26,5 +26,11 @@ item:
     file: /audio/03.mp3
     duration: 00:00:07
     length: 112,849 
+  - title: EP04-Theme 04
+    description: Placeholder description for episode four.
+    published: Sun, 08 Sep 2024 13:45:00 GMT
+    file: /audio/04.mp3
+    duration: 00:00:07
+    length: 112,849 
 
   
