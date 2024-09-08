@@ -7,10 +7,7 @@ def create_element(parent, tag, text=None, attrib=None):
     """Helper function to create an XML element with optional text and attributes."""
     elem = xml_tree.SubElement(parent, tag, attrib if attrib else {})
     if text is not None:
-        if 'text' in elem.tag:
-            elem.set('text', text)
-        else:
-            elem.text = text
+        elem.text = text
     return elem
 
 
