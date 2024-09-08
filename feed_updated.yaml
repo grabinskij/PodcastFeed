@@ -10,35 +10,35 @@ item:
 - description: Placeholder description for episode one.
   duration: 00:00:07
   file: /audio/01.mp3
-  guid: a0fe7a26-c269-4e00-a6dc-16ce339f8dbb
+  guid: cca4f8a6-3277-4f90-bbb7-fd6f550894bb
   length: 112,849
   published: Sun, 08 Sep 2024 11:00:00 GMT
   title: EP01-Theme 01
 - description: Placeholder description for episode two.
   duration: 00:00:07
   file: /audio/02.mp3
-  guid: 0b3332df-88d3-4de0-995b-6d7b538f7892
+  guid: d4a726ea-19bf-4049-8f04-6b39bb9b01c7
   length: 112,849
   published: Sun, 08 Sep 2024 11:30:00 GMT
   title: EP02-Theme 02
 - description: Placeholder description for episode three.
   duration: 00:00:07
   file: /audio/03.mp3
-  guid: 1bddde2b-49ce-4ee2-9619-8bcea5363c64
+  guid: c739b28f-2aad-461f-a4e2-369ab94a0eee
   length: 112,849
   published: Sun, 08 Sep 2024 13:30:00 GMT
   title: EP03-Theme 03
 - description: Placeholder description for episode four.
   duration: 00:00:07
   file: /audio/04.mp3
-  guid: 5077012e-3b0e-49d5-a45f-637d01a8a9d8
+  guid: f2667f6c-b4d1-4073-9508-700d1e5c7a0c
   length: 112,849
   published: Sun, 08 Sep 2024 13:45:00 GMT
   title: EP04-Theme 04
 - description: Placeholder description for episode five.
   duration: 00:00:07
   file: /audio/05.mp3
-  guid: a3d6d4ab-3cce-4c8c-bbc3-ad007c08359a
+  guid: 3d4e5afd-a51f-4960-a825-115dc89b7e76
   length: 112,849
   published: Sun, 08 Sep 2024 16:30:00 GMT
   title: EP05-Theme 05
