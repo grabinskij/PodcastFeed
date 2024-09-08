@@ -55,12 +55,17 @@ def main():
 
     category = yaml_data.get('category', {})
     if isinstance(category, dict):
-        category_element = create_element(channel_element, 'itunes:category', category.get('main', ''))
+        main_category = category.get('main', '')
         subcategory = category.get('subcategory', '')
-        if subcategory:
-            create_element(category_element, 'itunes:category', subcategory)
+        if main_category:
+            category_element = create_element(channel_element, 'itunes:category', main_category)
+            if subcategory:
+                create_element(category_element, 'itunes:category', subcategory)
+        else:
+            create_element(channel_element, 'itunes:category', '')
     else:
         create_element(channel_element, 'itunes:category', category)
+
 
     for item in yaml_data.get('item', []):
         item_element = create_element(channel_element, 'item')
@@ -74,12 +79,16 @@ def main():
         create_element(item_element, 'enclosure', None, {
             'url': link_prefix + item.get('file', ''),
             'type': 'audio/mpeg',
-            'length': item.get('length', '0')
+            'length': item.get('length', '0').replace(',', '')
         })
 
     # Write XML to file
-    output_tree = xml_tree.ElementTree(rss_element)
-    output_tree.write('podcast.xml', encoding='UTF-8', xml_declaration=True)
+        try:
+            output_tree = xml_tree.ElementTree(rss_element)
+            output_tree.write('podcast.xml', encoding='UTF-8', xml_declaration=True)
+        except Exception as e:
+            print(f"Error writing XML: {e}")
+            exit(1)
 
 if __name__ == "__main__":
     main()
