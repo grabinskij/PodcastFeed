@@ -1,0 +1,24 @@
+title: Test Feed Podcast
+subtitle: Presented by Some Media
+author: Author Name
+description: Conversations with various people.
+image: /images/image.jpg
+language: en-us
+category: General
+format: audio/mpeg
+link: https://grabinskij.github.io/podcast-feed
+item:
+  - title: EP01-Theme 01
+    description: Placeholder description for episode one.
+    published: Thu, 03 Jan 2024 00:00:00 GMT
+    file: /audio/01.mp3
+    duration: 00:00:05
+    length: 123,456  
+  - title: EP02-Theme 02
+    description: Placeholder description for episode two.
+    published: Thu, 02 Jan 2024 00:00:00 GMT
+    file: /audio/02.mp3
+    duration: 00:00:05
+    length: 234,567   
+
+  
