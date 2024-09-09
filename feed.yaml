@@ -39,10 +39,10 @@ item:
     duration: 00:00:07
     length: 112,849 
     guid:
-  - title: EP05-Theme 05
-    description: Placeholder description for episode five.
-    published: Sun, 08 Sep 2024 16:30:00 GMT
-    file: /audio/05.mp3
+  - title: EP06-Theme 06
+    description: Placeholder description for episode six.
+    published: Sun, 09 Sep 2024 16:30:00 GMT
+    file: /audio/06.mp3
     duration: 00:00:07
     length: 112,849 
     guid:
