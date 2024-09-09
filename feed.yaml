@@ -46,5 +46,12 @@ item:
     duration: 00:00:07
     length: 112,849 
     guid:
+  - title: EP06-Theme 07
+    description: Placeholder description for episode seven.
+    published: Sun, 09 Sep 2024 17:30:00 GMT
+    file: /audio/07.mp3
+    duration: 00:00:07
+    length: 112,849
+    guid:
 
   
