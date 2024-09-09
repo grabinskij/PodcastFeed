@@ -10,38 +10,38 @@ item:
 - description: Placeholder description for episode one.
   duration: 00:00:07
   file: /audio/01.mp3
-  guid: 83782775-ab42-45d3-9228-71856d813d44
+  guid: fb95faa7-2f94-4fac-87de-b5c3802a8f1e
   length: 112,849
   published: Sun, 08 Sep 2024 11:00:00 GMT
   title: EP01-Theme 01
 - description: Placeholder description for episode two.
   duration: 00:00:07
   file: /audio/02.mp3
-  guid: fb1d8ebb-e342-4cdd-a0c9-c19149b8ddb0
+  guid: bcb9fcc9-67c3-4c96-8c96-f76a6165ecf9
   length: 112,849
   published: Sun, 08 Sep 2024 11:30:00 GMT
   title: EP02-Theme 02
 - description: Placeholder description for episode three.
   duration: 00:00:07
   file: /audio/03.mp3
-  guid: b77b30ec-a2dc-4388-8cd5-34cad358d10a
+  guid: fd34f953-d7d8-4567-abb3-25de7c0f418e
   length: 112,849
   published: Sun, 08 Sep 2024 13:30:00 GMT
   title: EP03-Theme 03
 - description: Placeholder description for episode four.
   duration: 00:00:07
   file: /audio/04.mp3
-  guid: 80b99293-8b3b-49ba-b5ad-150448ebcf17
+  guid: 3bef4ec6-0c6b-4977-b51c-072328d39aea
   length: 112,849
   published: Sun, 08 Sep 2024 13:45:00 GMT
   title: EP04-Theme 04
-- description: Placeholder description for episode five.
+- description: Placeholder description for episode six.
   duration: 00:00:07
-  file: /audio/05.mp3
-  guid: 3407e62b-ea59-45b6-b479-a9cd4996427f
+  file: /audio/06.mp3
+  guid: c0cca4e7-9cf8-4f4d-92af-54cee12c6917
   length: 112,849
-  published: Sun, 08 Sep 2024 16:30:00 GMT
-  title: EP05-Theme 05
+  published: Sun, 09 Sep 2024 16:30:00 GMT
+  title: EP06-Theme 06
 language: en-us
 link: https://grabinskij.github.io/podcast-feed
 subtitle: Presented by Bohdan Hrabynskyi
