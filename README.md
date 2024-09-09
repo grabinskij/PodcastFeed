@@ -2,6 +2,7 @@
 
 Welcome to the **PodcastFeed** repository! This project is a solution designed to handle various podcast data and generate an RSS XML feed based on that data. It allows you to create and manage podcast episodes across different topics with ease.
 
+**Link to the generated XML**: [https://grabinskij.github.io/podcast-feed/podcast.xml](https://grabinskij.github.io/podcast-feed/podcast.xml)
 <br>
 
 ## 🌟 Overview
